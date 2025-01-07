@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slaptažodžio kūrėjas</title>
+  <link rel="stylesheet" href="stilius.css">
+  <script type="module" src="js/pagrindinis.js"></script>
+</head>
+<body>
+  <div class="slaptazodzio-kurejas">
+    <h1>Slaptažodžio Generatorius</h1>
+    <div class="parinktys">
+      <label>
+        Slaptažodžio Ilgis:
+        <input type="number" id="ilgumas" min="4" max="32" value="12">
+      </label>
+      <label>
+        <input type="checkbox" id="didziosios-raides" checked>
+        Įtraukti Didžiąsias Raides
+      </label>
+      <label>
+        <input type="checkbox" id="skaiciai" checked>
+        Įtraukti Skaičius
+      </label>
+      <label>
+        <input type="checkbox" id="simboliai" checked>
+        Įtraukti Simbolius
+      </label>
+    </div>
+    <button id="generuoti">Generuoti Slaptažodį</button>
+    <div class="rezultatas">
+      <input type="text" id="slaptazodis" readonly>
+      <button id="kopijuoti">Kopijuoti</button>
+    </div>
+  </div>
+  
+</body>
+</html>
