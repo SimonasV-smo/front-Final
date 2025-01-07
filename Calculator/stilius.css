@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #007bff, #28a745);
+  margin: 0;
+}
+
+.skaiciuotuvas {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ekranas {
+  background: #000000;
+  color: #42f5a7;
+  padding: 15px;
+  font-size: 1.8rem;
+  text-align: right;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.mygtukai {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.mygt {
+  background: #e0e0e0;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.mygt:hover {
+  background: #d6d6d6;
+}
+
+.operatorius {
+  background: #90caf9;
+}
+
+.operatorius:hover {
+  background: #64b5f6;
+}
+
+#lygus {
+  background: #29b6f6;
+  color: #fff;
+  grid-column: span 2;
+  border-radius: 8px;
+}
+
+#lygus:hover {
+  background: #0288d1;
+}
+
+#isvalyti, #istrinti {
+  background: #ef5350;
+  color: #fff;
+}
+
+#isvalyti:hover, #istrinti:hover {
+  background: #d32f2f;
+}
