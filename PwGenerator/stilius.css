@@ -1,75 +1,97 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(90deg, #007bff, #28a745);
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(90deg, #007bff, #28a745);
   margin: 0;
-  color: #333;
 }
 
 .slaptazodzio-kurejas {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 15px;
-  width: 350px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
 }
 
 h1 {
+  font-size: 1.8rem;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .parinktys {
-  margin-bottom: 20px;
   text-align: left;
+  margin-bottom: 20px;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
+.parinktys label {
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-input[type=number] {
-  width: 60px;
-  padding: 5px;
-  margin-left: 10px;
+input[type="number"], input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   margin-right: 10px;
 }
 
-button {
+#generuoti {
+  font-family: 'Roboto', sans-serif;
   background: #007bff;
-  color: #fff;
-  border: none;
+  color: white;
   padding: 10px 20px;
-  font-size: 1rem;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
+#generuoti:hover {
   background: #0056b3;
+  transform: scale(1.05);
 }
 
 .rezultatas {
-  margin-top: 20px;
   display: flex;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
 
 #slaptazodis {
-  flex-grow: 1;
+  width: calc(70% - 10px);
   padding: 10px;
-  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-right: 10px;
+  font-size: 1rem;
+}
+
+#kopijuoti {
+  font-family: 'Roboto', sans-serif;
+  background: #29b6f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#kopijuoti:hover {
+  background: #0288d1;
+  transform: scale(1.05);
 }
